@@ -1,0 +1,323 @@
+.navbar-toggler-icon:hover{
+    border: none;
+}
+#heroimg{
+    position: absolute;
+    background-color: rgba(113, 126, 243, 0.5);
+    color: white;
+    font-family: sans-serif;
+    padding: 17rem 0rem 0rem 0rem;
+    width: 100%;
+    height: 40rem;
+}
+#li:hover{
+    background-color: blue;
+    border-radius: 15px 0px 15px 0px;
+    /* transform: translate(5px,2px); */
+    transition: 1s;
+}
+
+#hero-text{
+    transform: translateX(-10%);
+    opacity: 0;
+    transition: all 0.6s ease-out;
+    animation: slideIn 1s ease-out forwards;
+}
+
+@keyframes slideIn{
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#hero-text2{
+    transform: translateX(-10%);
+    opacity: 0;
+    transition: all 0.6s ease-out;
+    animation: slideIn2 1.5s ease-out forwards;
+}
+
+@keyframes slideIn2{
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#hero-text3{
+    transform: translateX(-20%);
+    opacity: 0;
+    transition: all 0.6s ease-out;
+    animation: slideIn3 1.2s ease-out forwards;
+}
+
+@keyframes slideIn3{
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+ #ulnavbar:hover{
+    background-color: blue;
+    border-radius: 5px 0px 5px 0px;
+    transition: 0.9s;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    background-color: blue;
+    border-radius: 15px 0px 15px 0px;
+    transition: 1s;
+}
+
+@media (max-width: 768px) {
+    .nav-link:hover,
+    .nav-link:focus {
+        border-radius: 0 !important;
+        padding-left: 10px !important;
+        border-radius: 5px;
+    }
+}
+.dropdown-menu{
+    background-color: rgb(77, 77, 2);
+}
+.dropdown-menu .dropdown-item{
+    color: white;
+}
+
+@media (max-width: 768px) {
+    #wcu {
+        margin-top: 0;
+    }
+}
+
+
+.num{
+    width: 60px;
+    height: 60px;
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 0 auto 15px;
+    transform: rotate(45deg);
+}
+.num span{
+    transform: rotate(-45deg);
+}
+
+#cardd:hover{
+    background-color: blue;
+    transition: 1s;
+}
+
+#cardd{
+    border: none;
+    box-shadow: #000;
+}
+
+#crd2{
+    height: 200px;
+}
+#crd2:hover{
+    border: none;
+    box-shadow: 20px #000;
+    background-color: blue;
+    transition: 1s;
+}
+#footerL{
+    text-decoration: none;
+    font-size: large;
+    font-family: cursive;
+}
+#footerL:hover{
+    color: white;
+}
+li{
+    list-style-type: none;
+}
+
+.divider{
+    border-left: 2px dotted yellowgreen;
+    padding-left: 80px;
+}
+
+@media (max-width: 761px) {
+    .divider {
+        border-left: 2px dotted yellowgreen;
+        padding-left: 12px;
+        justify-content: left;
+    }
+}
+
+@media (max-width: 576px) {
+    .divider {
+        border-left: none;
+        border-top: 2px solid yellowgreen;
+        padding-left: 12px;
+        margin-top: 1rem;
+        justify-content: left;
+    }
+}
+#Lfooter{
+    margin-bottom: -15px;
+}
+#olft1-heroimg{
+    position: absolute;
+    background-color: rgba(10, 10, 10, 0.5);
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 10rem 0rem 0rem 0rem;
+    width: 100%;
+    height: 20rem;
+}
+#b-crmL{
+    text-decoration: none;
+}
+.breadcrumb {
+    --bs-breadcrumb-divider: '>';
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    color: #ffff00;
+}
+#olaft3crd:hover{
+    background-color: #ffff00;
+    transition: 1s;
+}
+.breadcrumb {
+    --bs-breadcrumb-divider: '|';
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    color: #ffff00;
+}
+.custom-indicators, .carousel-indicators {
+    position: static !important;
+    display: flex !important;
+    justify-content: center !important;
+    margin-top: 0;
+    padding-left: 0;
+    list-style: none;
+    gap: 10px;
+    width: auto !important;
+}
+.carousel-indicators li, .custom-indicators button, .carousel-indicators button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50px;
+    background-color: #0d6efd;
+    color: #212529;
+    font-weight: 700;
+    border: 0;
+    cursor: pointer;
+    box-shadow: none;
+    transition: transform .12s ease, background-color .12s ease;
+    padding: 0;
+    user-select: none;
+}
+.carousel-indicators li.active, .custom-indicators button.active, .carousel-indicators li.active, .carousel-indicators button.active {
+    background-color: var(--bs-primary, #0d6efd);
+    color: #960606;
+}
+
+@media (max-width: 576px) {
+    .carousel-indicators li, .custom-indicators button, .carousel-indicators li, .carousel-indicators button {
+        width: 25px;
+        height: 25px;
+        font-size: 13px;
+        line-height: 1px;
+    }
+} 
+#testimonialCarousel {
+    overflow: visible;
+}
+.carousel-control-prev-icon {
+    left: -60px;
+}
+
+.img-hov4{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.img-hov4 .overlay4 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s ease;
+}
+.img-hov4:hover{
+    transform: scale(0.9);
+    transition: 1.5s;
+}
+.img-hov4:hover .overlay4{
+    background: rgba(0, 0, 0, 0.4);
+}
+.img-hov3{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.img-hov3 .overlay3 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s ease;
+}
+.img-hov3:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+.img-hov3:hover .overlay3{
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* #popupMessage{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.3);
+    padding: 25px 30px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    z-index: 9999;
+}
+#closePopup{
+
+} */
+.custom-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.custom-indicators button{
+    width: 20px;
+    height: 4px;
+    border: none;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: all 0.4s ease;
+}
+.custom-indicators button.active{
+    width: 35px;
+    background-color: #fff;
+}
