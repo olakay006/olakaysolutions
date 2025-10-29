@@ -1,6 +1,11 @@
-.navbar-toggler-icon:hover{
-    border: none;
+.navbar-toggler{
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
 }
+/* .custom-toggler:focus{
+    border: 2px solid gold;
+} */
 #heroimg{
     position: absolute;
     background-color: rgba(113, 126, 243, 0.5);
@@ -18,7 +23,7 @@
 }
 
 #hero-text{
-    transform: translateX(-10%);
+    transform: translateX(-100%);
     opacity: 0;
     transition: all 0.6s ease-out;
     animation: slideIn 1s ease-out forwards;
@@ -35,27 +40,28 @@
     transform: translateX(-10%);
     opacity: 0;
     transition: all 0.6s ease-out;
-    animation: slideIn2 1.5s ease-out forwards;
+    animation: slideIn2 1.5s 1s ease-out forwards;
+    transform: scale(0.0);
 }
 
 @keyframes slideIn2{
     to {
         opacity: 1;
-        transform: translateX(0);
+        transform: scale(0.9);
     }
 }
 
 #hero-text3{
-    transform: translateX(-20%);
     opacity: 0;
     transition: all 0.6s ease-out;
-    animation: slideIn3 1.2s ease-out forwards;
+    animation: slideIn3 1.2s 2.5s ease-out forwards;
+    transform: scale(0.0);
 }
 
 @keyframes slideIn3{
     to {
         opacity: 1;
-        transform: translateX(0);
+        transform: scale(0.9);
     }
 }
  #ulnavbar:hover{
@@ -73,13 +79,14 @@
 @media (max-width: 768px) {
     .nav-link:hover,
     .nav-link:focus {
-        border-radius: 0 !important;
+        border-radius: 8px !important;
         padding-left: 10px !important;
         border-radius: 5px;
     }
 }
 .dropdown-menu{
-    background-color: rgb(77, 77, 2);
+    background-color: rgb(37, 37, 37);
+    transition: 3s;
 }
 .dropdown-menu .dropdown-item{
     color: white;
@@ -125,7 +132,17 @@
     border: none;
     box-shadow: 20px #000;
     background-color: blue;
-    transition: 1s;
+    transition: 0.7s;
+    transform: scale(1.1);
+}
+@media(max-width:577px) {
+    #crd2:hover {
+        border: none;
+    box-shadow: 20px #000;
+    background-color: blue;
+    transition: 0.7s;
+    transform: scale(0.5,0.5);
+    }
 }
 #footerL{
     text-decoration: none;
