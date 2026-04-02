@@ -10,14 +10,16 @@
 <body>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top py-0 bg-dark">
         <div class="container-fluid">
-            <a href="index.html" class="navbar-brand h6 pt-3"><img src="olatechLoGo.jpg" alt="logo" style="width: 50px; border-radius: 100%;">Olakay Solutions</a>
+            <a href="index.html" class="navbar-brand h6 pt-3"><img src="olatechLoGo.png" alt="logo" style="width: 50px; border-radius: 100%;">Olakay Solutions</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle Navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end pe-3" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link" id="li">Home</a>
+                    <a href="index.html" class="nav-link" aria-current="page" id="li">Home</a>
                 </li>
                 <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" id="featuresDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Features</a>
                     <ul class="dropdown-menu" aria-labelledby="featuresDropdown">
@@ -26,7 +28,7 @@
                         <li><a href="olafeat3.html" class="dropdown-item" id="ulnavbar">Creative UI/UX</a></li>
                     </ul>
                 </li>
-                <li class="nav-item dropdown"><a href="#" class="nav-link active dropdown-toggle" id="servicesDropdown" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" id="servicesDropdown" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
                     <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
                         <li>
                             <a href="olaServ-1.html" class="dropdown-item" id="ulnavbar">Website Design</a>
@@ -44,8 +46,8 @@
                             <a href="olaServ-5.html" class="dropdown-item" id="ulnavbar">Website Maintenance & Support</a>
                         </li>
                     </ul>
-                </li>
-                <li class="nav-item"><a href="ola-abt.html" class="nav-link" id="li">About</a></li>
+                </li><li class="nav-item"><a href="ola-abt.html" class="nav-link" id="li">About Us</a></li>
+                <li class="nav-item"><a href="ola-proj.html" class="nav-link" id="li">Projects</a></li>
                 <li class="nav-item"><a href="olacont.html" class="nav-link" id="li">Contact</a></li>
             </ul>
         </div>
@@ -54,10 +56,10 @@
     <div class="hero d-flex align-items-center"><img src="olatechIMG.jpg" alt="" style="background-repeat: no-repeat; background-size: cover; height: 17rem; width: 100%;">
         <div class="container-fluid text-center" id="olft1-heroimg">
             <h1 class="text-center display-5"><strong>Website Application Development</strong></h1>
-            <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '|'; color: red; background-color: none; font-size: large;">
+            <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '|'; background-color: none; font-size: large;">
                 <ol class="breadcrumb justify-content-center">
                     <li class="breadcrumb-item"><a href="index.html" id="b-crmL">Home</a></li>
-                    <li class="breadcrumb-item"><a href="olaServ-2.html" id="b-crmL">Website Application Development</a></li>
+                    <li class="breadcrumb-item">Website Application Development</li>
                 </ol>
             </nav>
         </div>
@@ -124,20 +126,32 @@
               <input type="email" name="email" class="form-control" id="email" placeholder="Email">
               <small class="errorMsg" style="color: red; display: none;">This field is required</small>
             </div>
-            <div class="col-12"><textarea class="form-control" rows="6" id="comment" name="text" placeholder="Comments:"></textarea>
+            <div class="col-12"><textarea class="form-control" rows="6" id="comment" name="text" placeholder="Write your message"></textarea>
             <small class="errorMsg" style="color: red; display: none;">This field is required</small>
             </div>
             <div class="d-flex"><button type="submit" class="btn btn-primary rounded-pill ms-auto py-2 px-3 mt-3" id="submitBtn">Send Message</button></div>
-            <p id="responseMessage"></p>
           </form>
           
         </div>
       </div>
     </div>
   </div>
+  <div class="modal fade" id="successModal" tabindex="1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content" style="border-radius: 18px;">
+        <div class="modal-header">
+          <h5 class="modal-title">Message Sent</h5>
+          <button class="btn-close" data-bs-dismis="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Thank you for contacting Olakay Solutions, We will get back to you as soon as possible
+        </div>
+      </div>
+    </div>
+  </div>
   <footer class="bg-dark py-5 container-fluid">
     <div class="container text-center">
-       <img src="olatechLoGo.jpg" alt="" style="width: 15rem; border-radius: 300px;"> 
+       <img src="olatechLoGo.png" alt="" style="width: 15rem;"> 
     </div>
     <div class="mt-3">
         <div class="row">
@@ -160,8 +174,8 @@
     </div>
   </footer>
   <footer class="bg-warning py-1" id="Lfooter">
-    <h6 class="text-center text-white">Last Updated: October 2025</h6>
-    <h6 class="text-center text-white">&copy;2025 Olakay Solutions. All rights reserved.</h6>
+    <h6 class="text-center text-white">&copy;2026 Olakay Solutions. All rights reserved.</h6>
+    <h6 class="text-center text-white">Last Updated: April 2026</h6>
   </footer>
 
     <script>
